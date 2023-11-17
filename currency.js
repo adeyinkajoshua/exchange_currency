@@ -10,12 +10,22 @@ document.getElementById('convertBtn').addEventListener('click', () => {
         return;
     }
 
+// const getExchangeRate = async () => {
+//     try {
+//         const response = await fetch("https://open.er-api.com/v6/latest/USD");
+//         const data = await response.json();
+//         return data.USD.rate_float;
+//     } catch (error) {
+//         console.error("Error fetching exchange rates:", error);
+//         throw error;
+//     }
+// };
 
     const exchangeRates = {
         'USD': 1.0,
         'EUR': 0.85,
         'GBP': 0.73,
-        'NGN': 410.0, // Replace with the actual NGN to USD rate
+        'NGN': 824.0, // Replace with the actual NGN to USD rate
     };
 
     const fromRate = exchangeRates[fromCurrency];
@@ -28,4 +38,4 @@ document.getElementById('convertBtn').addEventListener('click', () => {
     } else {
         alert('Invalid currency selection.');
     }
-});
+})

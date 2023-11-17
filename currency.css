@@ -1,8 +1,11 @@
 body{
     background-color: rgb(9, 175, 98);
-    border: 2px solid black;
+    border: 5px solid black;
     width: 59%;
-    color: azure;
+    color: rgb(14, 14, 14);
+    background-image: url(./asset/image/jos23.jpg);
+    background-repeat: cover;
+
 }
 .container{
     margin-left: 30px;
@@ -25,5 +28,5 @@ h1{
     background-color: black;
 }
 #result{
-    color: rgba(237, 233, 228, 0.905);
+    color: rgba(232, 130, 6, 0.905);
 }
